@@ -9,6 +9,7 @@ const CategoryBox = ({label, icon:Icon, selected}) => {
         let currentQuery = {}
         if(params){
             currentQuery = qs.parse(params.toString())
+        }
             const updateQuery = {...currentQuery, category: label}
 
             const url =qs.stringifyUrl({
@@ -18,7 +19,7 @@ const CategoryBox = ({label, icon:Icon, selected}) => {
             navigate(url)
             
 
-        }
+        
     }
     return (
     <div onClick={handleClick} className={`flex flex-col justify-center items-center gap-2 p-3 border-b-2 hover:text-neutral-800 transition cursor-pointer ${selected ? 'border-b-neutral-800 text-neutral-800' : ''}`}>
