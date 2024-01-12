@@ -4,7 +4,7 @@ import Rooms from "../../components/Rooms/Rooms";
 
 const Home = () => {
     return (
-        <div>
+        <div className="space-y-10">
           <Categories></Categories>
           <Rooms></Rooms>
         </div>
