@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Container from "../../components/Container";
 import Loader from "../../components/Loader";
+import { Helmet } from "react-helmet-async";
 
 
 const RoomDetails = () => {
@@ -24,7 +25,9 @@ const RoomDetails = () => {
     return (
         <Container>
 
-            {room?.title}
+            <Helmet>
+                <title>{room?.title}</title>
+            </Helmet>
         </Container>
     );
 };
