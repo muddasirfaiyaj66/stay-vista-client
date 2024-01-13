@@ -28,6 +28,11 @@ const RoomDetails = () => {
             <Helmet>
                 <title>{room?.title}</title>
             </Helmet>
+            <div className="flex flex-col gap-6">
+                <div className="">Heading</div>
+                <div className="">body</div>
+                <div className="">Calender</div>
+            </div>
         </Container>
     );
 };
