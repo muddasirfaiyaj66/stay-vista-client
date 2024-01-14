@@ -4,6 +4,8 @@ import {
   RouterProvider
 } from "react-router-dom";
 import './index.css'
+import 'react-date-range/dist/styles.css'
+import 'react-date-range/dist/theme/default.css'
 import { router } from './routes/Routes';
 import AuthProvider from './providers/AuthProviders';
 import { Toaster } from 'react-hot-toast';
